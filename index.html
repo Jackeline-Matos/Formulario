@@ -23,9 +23,76 @@
                     <span>voltar</span>
                 </div>
                 <h1>Formulário de Matricula</h1>
-                <p>Preencha os dados abaixo para matricular seu filho na educacao infantil Estrelas do Amanha.</p>
+                <p>Preencha os dados abaixo para matricular seu filho na educacao infantil Estrelas do Amanha.
+                </p>
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informacao da Crianca</legend>
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input 
+                            id="fullname" 
+                            name="fullname"
+                            type="text"
+                            placeholder="Qual o nome da crianca"
+                            >
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="birth">Data de Nascimento</label>
+                            <input 
+                            id="birth" 
+                            name="birth"
+                            type="date"
+                            lang="pt-BR"
+                            >
+                        </div>
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino </option>
+                                <option value="na">Prefiro nao responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informacoes médicas</label>
+                            <textarea 
+                            name="medical-info" 
+                            id="medical info"
+                            cols="30"
+                            rows="10"
+                            placeholder="A crianca possui alguma condicao média que a escola deva estar ciente?"
+                            >
+                        </textarea>
+
+                        <div class="">
+                            <input 
+                            type="file"
+                            id="birth-file"
+                            name="birth-file"
+                            >
+                        </div class="droparea-wrapper">
+                        <input 
+                        type="file"
+                        id="birth-file"
+                        name="birth-file"
+                
+                        >
+                        <img src="/assets/icons/cloud-upload.svg" alt="Icone de uma nuvem">
+                        <p>Clique aqui para selecionar 
+                            <br>
+                            Selecionar os arquivos
+                        </p>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
+
+
         </main>
+
         <aside>
             <div class="aside-container">
                 <header>
