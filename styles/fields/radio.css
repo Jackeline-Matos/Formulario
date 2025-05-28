@@ -2,24 +2,32 @@ label + .radio-wrapper {
   margin-top: 1rem;
 }
 
+/* auto-fit= encaixe automatico
+minmax(7.5rem, 1fr), garante que use os espacos de 
+acordo com o valor que foi delimitado. 
+*/
 .radio-wrapper{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   gap: 1rem;
-}
 
+
+}
+  /* all:unset; oculta todos as funcionalidades do input, 
+    porém ele ainda existe.
+  
+  */
 .radio-inner {
 
   border:1px solid var(--stroke-default);
   border-radius: .5rem;
-
   display: grid;
-  justify-content: center;
+  justify-items: center;
   gap: .5rem;
 
-  padding: 2rem ,5rem .5rem;
+  padding: 2rem 5rem 5rem;
   position:relative;
-
+  
   & input,
   & input:focus,
   & input:hover {
@@ -28,7 +36,21 @@ label + .radio-wrapper {
     inset: 0;
   }
 
-  .radio-image{
-    
+.radio-image{
+/*     background-image: url(../../assets/icons/radio-default.svg); */
+    width: 1.5rem;
+    height: 1.5rem;
+
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+
+
+
+  }
+
+  &:hover, &:focus-within {
+    border:1px solid var(--stroke-highlight)
   }
 }
+
